@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "cedc726c-47c8-4601-8f2f-5e0a06bbedfc",
+		"name": "Recipe collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40134018"
+	},
+	"item": [
+		{
+			"name": " http://localhost:3000/create/create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Spaghetti Bolognese\",\r\n  \"ingredients\": [\r\n    \"Spaghetti\",\r\n    \"Ground beef\",\r\n    \"Tomato sauce\",\r\n    \"Onion\",\r\n    \"Garlic\",\r\n    \"Olive oil\",\r\n    \"Parmesan cheese\"\r\n  ],\r\n  \"instruction\": \"Boil the spaghetti. In a separate pan, cook ground beef with onions and garlic. Add tomato sauce and simmer. Combine with cooked spaghetti and top with parmesan cheese.\",\r\n  \"createAt\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/create/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/get/allrecipes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/get/allrecipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"get",
+						"allrecipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/update/update/676c2572372ebda5e5d399d3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated Pasta\",\r\n            \"ingredients\": [\r\n                \"Pasta\",\r\n                \"Tomato Sauce\"\r\n            ],\r\n            \"instruction\": \"it should be spycies \",\r\n            \"createAt\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/update/update/676c2572372ebda5e5d399d3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"update",
+						"676c2572372ebda5e5d399d3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
